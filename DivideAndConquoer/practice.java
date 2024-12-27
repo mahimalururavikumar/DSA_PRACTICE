@@ -11,6 +11,8 @@ public class practice {
         }
         System.out.print("]");
     }
+
+    //MERGE SORT
     public static void mergeSort(int arr[],int si,int ei){
         if(si >= ei)
         {
@@ -54,10 +56,66 @@ public class practice {
         }
     }
     
+    //QUICK SORT
+    public static void quickSort(int arr[],int si,int ei){
+        if(si >= ei)
+        {
+            return;
+        }
+
+        int pdx = partition(arr, si, ei);
+        quickSort(arr, si, pdx-1);
+        quickSort(arr, pdx+1, ei);
+    }
+
+    public static int partition(int arr[],int si,int ei){
+        int pivot = arr[ei];
+        int i = si-1;
+        for(int j=si;j<ei;j++)
+        {
+            if(arr[j]<pivot){
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        i++;
+        int temp = arr[i];
+        arr[i] = pivot;
+        arr[ei] = temp;
+        return i;
+    }
+
+    public static int rotatedSortedSearch(int arr[],int si,int ei,int target){
+        if(si > ei){
+            return -1;
+        }
+        int mid = si + (ei-si)/2;
+
+        if(arr[mid] == target){
+            return mid;
+        }
+
+        if(arr[si] < arr[mid]){
+            if(arr[si]<=target && target<=arr[mid-1]){
+                return rotatedSortedSearch(arr, si, mid-1, target);
+            }else{
+                return rotatedSortedSearch(arr, mid+1, ei, target);
+            }
+        }else{
+            if(arr[mid]<=target && target<=arr[ei]){
+                return rotatedSortedSearch(arr, mid+1, ei, target);
+            }else{
+                return rotatedSortedSearch(arr, si, mid-1, target);
+            }
+        }
+    }
     public static void main(String[] args) {
         
-        int arr[] = {6, 3, 9, 5, 2, 8};
-        mergeSort(arr, 0, arr.length-1);
-        printArr(arr);
+        int arr[] = { 4, 5, 6, 7, 0, 1, 2};
+        //mergeSort(arr, 0, arr.length-1);
+        //quickSort(arr, 0, arr.length-1);
+        System.out.println(rotatedSortedSearch(arr, 0, arr.length-1, 0));
     }
 }

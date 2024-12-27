@@ -2,7 +2,7 @@ package TODArrays;
 
 import java.util.*;
 
-public class todcreation {
+public class pratice {
 
     //PRINT ARRAY
     public static void printArr(int matrix[][]) {
@@ -126,11 +126,12 @@ public class todcreation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int matrix[][] = {
-                { 1, 2, 7 },
-                { 4, 7, 6 },
-                { 7, 8, 9 } };
-        int key = 7;
-        System.out.println(Count(matrix, key));
+                { 1, 1, 1 },
+                { 2, 2, 2 },
+                { 3, 3, 3 } };
+        // int key = 7;
+        // System.out.println(Count(matrix, key));
+        diagonalSum(matrix);
         sc.close();
     }
 }
