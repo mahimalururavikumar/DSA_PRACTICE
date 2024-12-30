@@ -1,4 +1,4 @@
-package Recursion;
+package Reacursion.Recursion1;
 
 public class practice {
 

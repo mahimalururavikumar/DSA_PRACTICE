@@ -1,4 +1,4 @@
-package RecurrenceAssin;
+package Reacursion.RecurrenceAssin;
 
 public class practice {
 
@@ -132,7 +132,7 @@ public class practice {
         }
     }
     public static void main(String[] args) {
-         int arr[] = {7, 2,-5, 5, 8, 2, 10, -2, -4};
+        // int arr[] = {7, 2,-5, 5, 8, 2, 10, -2, -4};
         // OccIndexes(arr, 7, 0);
         //digitToNumber(1947);
         // String str = "abcab";
