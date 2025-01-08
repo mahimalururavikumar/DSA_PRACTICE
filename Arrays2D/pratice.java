@@ -1,4 +1,4 @@
-package TODArrays;
+package Arrays2D;
 
 import java.util.*;
 

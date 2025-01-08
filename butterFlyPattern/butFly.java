@@ -1,4 +1,4 @@
-package butterFly;
+package butterFlyPattern;
 
 public class butFly {
     public static void main(String[] args) {

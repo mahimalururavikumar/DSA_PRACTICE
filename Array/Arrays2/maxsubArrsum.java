@@ -1,4 +1,4 @@
-package arrays2;
+package Array.Arrays2;
 
 public class maxsubArrsum {
 

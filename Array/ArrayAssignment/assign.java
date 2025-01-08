@@ -1,4 +1,4 @@
-package arrayAssignment;
+package Array.ArrayAssignment;
 
 import java.util.HashSet;
 

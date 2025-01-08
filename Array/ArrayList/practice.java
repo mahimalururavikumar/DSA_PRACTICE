@@ -1,4 +1,4 @@
-package ArrayList;
+package Array.ArrayList;
 import java.util.*;
 
 public class practice {

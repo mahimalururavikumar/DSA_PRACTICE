@@ -1,4 +1,4 @@
-package ArrayList.Assign3;
+package Array.ArrayList.Assign3;
 
 import java.util.ArrayList;
 import java.util.HashMap;

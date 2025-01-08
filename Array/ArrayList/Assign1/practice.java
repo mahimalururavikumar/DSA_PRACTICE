@@ -1,4 +1,4 @@
-package ArrayList.Assign1;
+package Array.ArrayList.Assign1;
 
 import java.util.ArrayList;
 
