@@ -71,6 +71,7 @@ public class practice {
 
     public static int clearIbits(int n,int i){
         int bitmask = (-1<<i);
+        System.out.println(bitmask);
         return n & bitmask;
     }
     
@@ -108,6 +109,6 @@ public class practice {
         return ans;
     }
     public static void main(String[] args) {
-        System.out.println(fastExponential(5, 3));
+        System.out.println(checkIfpower(5));
     }
 }

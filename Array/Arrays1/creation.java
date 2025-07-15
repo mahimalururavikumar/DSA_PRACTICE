@@ -118,7 +118,7 @@ public class creation {
                     min = sum;
                 }
                 if(sum>max){
-                    max= sum;
+                    max = sum;
                 }
                 if(sum<minSum){
                     minSum = sum;
@@ -141,7 +141,7 @@ public class creation {
 
         Scanner sc = new Scanner(System.in);
         int marks[] = { 1, -2, 6, -1, 3};
-        
+       
         subArray(marks);
         
         sc.close();

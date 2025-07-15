@@ -1,7 +1,10 @@
-package Queue.Queue;
+
+//QUEUE USING ARRAY
+
+package Queue.QueueWithArr;
 
 public class practice {
-
+    
     static class Queue {
         static int arr[];
         static int size;
@@ -13,16 +16,14 @@ public class practice {
             rear = -1;
             front = -1;
         }
-
-        public static boolean isFull(){
+        public boolean isFull(){
             return front == (rear+1)%size;
         }
-
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return rear == -1 && front == -1;
         }
 
-        public static void add(int data){
+        public void add(int data){
             if(isFull()){
                 System.out.println("Queue is full");
                 return;
@@ -34,7 +35,7 @@ public class practice {
             arr[rear] = data;
         }
 
-        public static int remove(){
+        public int remove(){
             if(isEmpty()){
                 System.out.println("Queue is Empty");
                 return -1;
@@ -48,7 +49,7 @@ public class practice {
             return result;
         }
 
-        public static int peek(){
+        public int peek(){
             if(isEmpty()){
                 return -1;
             }
@@ -56,7 +57,7 @@ public class practice {
         }
     }
     public static void main(String[] args) {
-        Queue q = new Queue(6);
+        Queue q = new Queue(3);
         q.add(1);
         q.add(2);
         q.add(3);
@@ -66,7 +67,7 @@ public class practice {
         q.add(5);
         //System.out.println(q.remove()+" ");
         q.add(6);
-        q.add(7);
+        //q.add(7);
         //q.add(8);
         //q.add(9);
         System.out.println(q.peek());

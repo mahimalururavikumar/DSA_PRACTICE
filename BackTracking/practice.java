@@ -154,15 +154,15 @@ public class practice {
        
         //CHESS BOARD
         //{
-        int n = 4;
-        char board[][] = new char[n][n];
-        for(int i=0;i<board.length;i++){
-            for(int j=0;j<board[0].length;j++){
-                board[i][j] = 'X';
-                System.out.print(board[i][j]+" ");
-            }
-            System.out.println();
-        }
+        // int n = 4;
+        // char board[][] = new char[n][n];
+        // for(int i=0;i<board.length;i++){
+        //     for(int j=0;j<board[0].length;j++){
+        //         board[i][j] = 'X';
+        //         System.out.print(board[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
         // if(nQueens(board,0)){
         //     System.out.println("Solutions are possible");
         //     printBorad(board);
@@ -189,6 +189,7 @@ public class practice {
         // }
         //}
 
-
+        String str = "abc";
+        subSets(str, new StringBuilder(), 0);
     }
 }
